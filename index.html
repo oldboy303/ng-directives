@@ -22,6 +22,12 @@
   <isolate-scope-with-string name="{{customer.name}}" street="{{customer.street}}">
   </isolate-scope-with-string>
 
+  <hr>
+
+  <h2>Isolate Scope with Object Directive</h2>
+  <isolate-scope-with-object data="customer">
+  </isolate-scope-with-object>
+
   <!-- angular and app -->
   <script src="https://code.angularjs.org/1.5.0-rc.2/angular.js"></script>
   <script src="app.js"></script>
@@ -30,6 +36,7 @@
   <script src="directives/shared_scope.js"></script>
   <script src="directives/isolate_scope.js"></script>
   <script src="directives/isolate_scope_string.js"></script>
+  <script src="directives/isolate_scope_object.js"></script>
 
 </body>
 </html>

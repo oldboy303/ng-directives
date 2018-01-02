@@ -7,7 +7,7 @@
       scope: {
         name: '@',
         street: '@'
-    }, 
+      }, 
       template: '<b>Name:</b> {{name}} <br> <b>Street:</b> {{street}}'
     };
   });
