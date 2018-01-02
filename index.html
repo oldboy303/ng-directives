@@ -6,12 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<body>
+<body ng-controller="customersController">
+
+  <h2>Shared Scope Directive</h2>
+  <shared-scope></shared-scope>
+
+  <hr>
+
+  <h2>Isolate Scope Directive</h2>
+  <isolate-scope></isolate-scope>
+
+  <hr>
+
+  <h2>Isolate Scope with String Directive</h2>
+  <isolate-scope-with-string name="{{customer.name}}" street="{{customer.street}}">
+  </isolate-scope-with-string>
+
   <!-- angular and app -->
   <script src="https://code.angularjs.org/1.5.0-rc.2/angular.js"></script>
   <script src="app.js"></script>
 
   <!-- directives -->
+  <script src="directives/shared_scope.js"></script>
+  <script src="directives/isolate_scope.js"></script>
+  <script src="directives/isolate_scope_string.js"></script>
 
 </body>
 </html>

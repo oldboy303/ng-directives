@@ -51,10 +51,11 @@
         street: '777 Lucky Lane'
       };
     };
+  
+  };
 
-    customersController.$inject = injectParams;
+  customersController.$inject = injectParams;
 
-    app.controller('customersController', customersController);
+  app.controller('customersController', customersController);
 
-  }
 }());
