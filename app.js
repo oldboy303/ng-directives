@@ -12,7 +12,7 @@
       street: '123 Main St'
     };
 
-    $scope.customers = [
+    $scope.people = [
       {
         name: 'David',
         street: '111 Lincoln St'
