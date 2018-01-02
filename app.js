@@ -6,8 +6,6 @@
 
   var customersController = function($scope) {
     var counter = 0;
-    
-    $scope.tasks = [{ title: 'Task1'}];
 
     $scope.customer = {
       name: 'John',
@@ -36,14 +34,6 @@
         street: '555 Blosom Lane'
       }
     ];
-
-    $scope.addCustomer = function(name) {
-      counter++;
-      $scope.customers.push({
-        name: (name) ? name : 'New Cusstomer ' + counter,
-        street: counter + ' Anywhere St'
-      });
-    };
 
     $scope.changeData = function() {
       $scope.customer = {
